@@ -1,0 +1,187 @@
+body {
+
+    /*background: linear-gradient(135deg, rgb(24, 24, 24),rgb(59, 59, 59),rgb(28, 28, 27));*/
+    background-color: black;
+    /*  background-image: url(../Background-img/Back-3.jpg);*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.class1 {
+
+    border: 1px rgb(12, 12, 12) solid;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:28%;
+    height:550px;
+    padding-bottom: 35px;
+    /*background-color: #032243; */
+    color: white;
+    border-radius: 40px;
+    box-shadow: 0 0 50px #007bff;
+
+}
+
+.class1 img {
+
+    /* padding-left: 175px; */
+    padding-top: 20px;
+    /* border-radius: 20px 20px 20px 20px;*/
+
+
+}
+
+/*.class1 h2 {
+
+    /* padding-left: 125px; 
+}*/
+
+#id1 {
+
+    /* padding-left: 80px; */
+    padding-top: 4px;
+    gap: 10px;
+}
+
+#id1 input {
+
+    width: 270px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+
+}
+
+
+#id1 i {
+
+    color: black;
+}
+
+.user {
+
+    position: absolute;
+    top: 37%;
+    right: 41.3%;
+
+
+
+}
+
+.lock {
+    position: absolute;
+    right: 41.3%;
+    top: 46.8%;
+    /*color: rgb(161, 30, 30);
+    border: 1px white solid;*/
+
+}
+
+#id2 {
+
+    display: flex;
+    gap: 30px;
+    padding-top: 20px;
+    /* padding-left: 85px; */
+    padding-top: 6px;
+    /*border: 1px white solid;*/
+}
+
+#id2 a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+#id3 {
+
+    /* padding-left: 80px; */
+    padding-top: 20px;
+
+}
+
+#id3 button {
+
+    padding-left: 125px;
+    padding-right: 125px;
+    background-color: #007bff;
+    border-color: #007bff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    /* box-shadow: 5px 5px 7px lightgrey; */
+    color: white;
+}
+
+#id4 {
+
+    /* padding-left: 120px; */
+    padding-top: 10px;
+}
+
+#id4 a {
+
+    text-decoration: none;
+    color: #007bff;
+}
+
+#id5 {
+
+    border: 1px white solid;
+    width: 200px;
+    /* margin-left: 80px; */
+    padding-left: 70px;
+    padding-right: 10px;
+
+}
+
+.google {
+    color: white;
+    position: absolute;
+    top: 77.3%;
+    left: 44%;
+}
+
+.login-combine{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+
+@media screen and (min-width:320px) and (max-width:578px) {
+    #id1 input {
+        width: 100%;
+    }
+    .class1{
+        width:100% !important;
+        height: auto;
+    }
+    .class1 img{
+        width:100px;
+    }
+    .login-combine{
+        width:100%;
+        padding: 20px;
+    }
+
+    #id3 button{
+        padding: 8px 80px;
+    }
+    #id2 label{
+        font-size: 10px;
+    }
+    .google {
+        top: 93%;
+        left: 25%;
+    }
+    #id5{
+        font-size: 14px;
+    }
+}

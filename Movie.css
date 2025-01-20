@@ -1,0 +1,558 @@
+body {
+
+    /*background-image: url(../Background-img/Back-1.jpg);*/
+    /*background: linear-gradient(135deg, rgb(51, 77, 34),blue,red);*/
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0px;
+    border: 2px rgb(8, 58, 8);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*Nav-Bar*/
+
+.nav-1 {
+
+    border: 1px white;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+}
+
+#id1 {
+
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+    /* margin-left: 70px; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#id2 {
+
+    display: flex;
+    gap: 7px;
+    margin-left: 60px;
+
+}
+
+#id3 {
+
+    margin-top: 16px;
+    width: 400px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 45px;
+    padding-right: 10px;
+    border-radius: 30px;
+    background-color: rgb(33, 33, 33);
+    border-color: rgb(33, 33, 33);
+    border: 1px;
+
+}
+
+#id4 {
+
+    width: 40px;
+    height: 40px;
+    border: 1px rgb(33, 33, 33) solid;
+    background-color: rgb(33, 33, 33);
+    border-radius: 20px;
+    margin-top: 16px;
+    display: flex;
+    justify-content:center;
+    align-items:center ;
+
+}
+
+#id4 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*.home {
+
+    /* position: absolute;
+    left: 29.3%;
+    padding-left: 8px;
+    top: 27px; 
+}*/
+
+.search {
+
+    position: absolute;
+    left: 34.1%;
+    top: 27px;
+    
+}
+
+.id3{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    /*padding-left: 300px;*/
+    
+}
+
+.mic {
+
+    position: absolute;
+    top: 27px;
+    left: 60.7%;
+}
+
+#id5 {
+
+    height: 35px;
+    border: 1px rgb(54, 54, 54) solid;
+    margin-top: 18px;
+}
+
+#id6 {
+    margin-top: 10px;
+}
+
+#id6 :hover {
+
+    text-decoration: dotted;
+}
+
+
+/*.dollar {
+
+    position: absolute;
+    top: 28px;
+    right: 421px;
+}*/
+
+/*#id7 {
+
+    /*padding-left: px;*/
+    /* margin-top: 25px;
+    color: white;
+    text-decoration: none; */
+    /*border: 1px red solid;
+    padding-right: 7px;
+
+
+}
+
+#id7 a {
+
+    color: white;
+    text-decoration: none;
+}
+*/
+.user {
+
+    /*position: absolute;
+    right: 11%;
+    margin-top: 35px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*.menu {
+
+    position: absolute;
+    top: 27px;
+    right: 110px;
+}*/
+
+.nav-update {
+
+    display: flex;
+    /* border:2px solid red; */
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(33, 33, 33);
+
+
+    
+}
+
+#nav-update-1 {
+
+    display: flex;
+    gap: 30px;
+    padding-left: 120px;
+    font-size: large;
+    
+}
+
+#nav-update-1 a {
+
+    text-decoration: none;
+    color: #fff !important;
+}
+
+#hover{
+  height:20px;
+  /* position: fixed; */
+  display: flex;
+  justify-content: center;
+  transition: 2s ease;
+  padding: 2px;
+  align-items: center;
+}
+
+#hover:hover {
+
+    /* border: 1px rgb(83, 82, 82) solid; */
+    background-color: rgb(119,65,247);
+    /* margin-bottom: 20px; */
+
+}
+
+#nav-update-2 {
+
+    display: flex;
+    color: #fff;
+   /* border: 1px white solid;*/
+    margin-right: 120px;
+    gap: 5px;
+}
+
+#nav-update-icon {
+
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+#icon {
+
+    border: 1px #fff solid;
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-update-1 {
+    display: flex;
+    /* border:2px solid red; */
+    justify-content: space-around;
+}
+
+#hover {
+    position: relative; /* Ensures absolute positioning of the pseudo-element */
+    text-align: center;
+    color:#fff; /* Centers the text */
+    /* padding: 10px;  */
+}
+
+#hover a {
+    text-decoration: none; /* Removes underline from links */
+    color: #333; /* Default text color */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+#hover:hover a {
+    color: #007bff; /* Change color on hover */
+}
+
+#hover::after {
+    content: '';
+    display: block;
+    height: 2px; /* Thickness of the underline */
+    background: #007bff; /* Color of the underline */
+    position: absolute;
+    left: 50%; /* Center the underline */
+    bottom: 0; /* Position at the bottom of the text */
+    width: 0; /* Start with a width of 0 */
+    transition: width 0.3s ease, left 0.3s ease; /* Smooth transition for width and position */
+}
+
+#hover:hover::after {
+    width: 100%; /* Expands to full width on hover */
+    left: 0; /* Adjust position to left */
+}
+
+/*welcome*/
+
+.Welcome {
+
+    /*background-color: #fff;*/
+    color: white;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.Welcome p {
+
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+/*booter*/
+
+.Container {
+
+    display: flex;
+    gap: 70px;
+    padding-left: 110px;
+    margin-top: 20px;
+    background-color: rgb(33, 33, 33);
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+}
+
+
+.Movie img {
+
+    transition-duration: 0.5s;
+    border-radius: 10px;
+}
+
+.Movie img:hover {
+
+    z-index: 2;
+    transform: scale(0.8);
+    box-shadow: 0 0 50px #007bff;
+    
+}
+
+.Container p {
+
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    
+}
+
+.Container a {
+
+    text-decoration: none;
+}
+
+
+
+.Booter h1 {
+
+    padding-left: 110px;
+}
+
+/*Footer-Content*/
+/*Mobile-App*/
+
+.line1 {
+
+    width: 1300px;
+    color: white;
+    background-color: white;
+    border: 1px rgb(33, 33, 33) solid;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+}
+
+
+.line2 {
+
+    border: 1px rgb(33, 33, 33) solid;
+    width: 1300px;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.phone-app {
+
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    /*  border: 1px white solid;*/
+}
+
+#logo-sent {
+
+    display: flex;
+    gap: 20px;
+
+}
+
+#logo-sent img {
+
+    padding-top: 15px;
+}
+
+#sent h2 {
+
+    margin-bottom: 0px;
+
+}
+
+#sent {
+
+    margin-top: 16px;
+}
+
+#sent p {
+
+    margin-top: 6px;
+}
+
+#app-img {
+
+    padding-top: 38px;
+    gap: 5px;
+}
+
+/*Music And Movie Details*/
+
+.footer-1 {
+
+    background-color: rgb(33, 33, 33);
+    color: #fff;
+    margin-top: 100px;
+    font-size: small;  
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+#footer-content-1 {
+
+    display: flex;
+    gap: 20px;
+}
+
+#footer-content-2 {
+
+    display: flex;
+    gap: 20px;
+}
+
+#footer-content-3 {
+
+    display: flex;
+    gap: 20px;
+}
+
+#footer-content-4 {
+
+    display: flex;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+/*Spotstar-Details*/
+
+.footer-2 {
+
+    background-color: black;
+    color: white;
+    display: flex;
+    gap: 100px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 250px;
+
+}
+
+.i {
+
+    display: flex;
+    gap: 6px;
+    margin-top: 20px;
+}
+
+/*Spotstar-Site-Name*/
+
+.footer-3 {
+
+    /* background-color: #fff;*/
+    display: flex;
+    justify-content: space-between;
+    /*background-color: blue;*/
+    color: white;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+#footer-3-c {
+
+    display: flex;
+}
+
+#footer-3-c img {
+
+    padding-top: 16px;
+}
+
+/*SignUp-Back*/
+
+.footer-SignUp {
+
+    /*border: 1px white solid;
+    background-color: #007bff;
+   position: fixed;
+    z-index: 4;*/
+    padding-left: 10px;
+ /*   padding-right: 20px;*/
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(135deg, rgb(149, 65, 153), rgb(250, 114, 253), rgb(77, 101, 238), rgb(2, 68, 144));
+
+}
+
+#footer-SignUp-1 {
+
+    padding-left: 20px;
+    
+}
+
+#footer-SignUp-1 h3 {
+
+    /*border: 1px white solid;*/
+    margin-bottom: 0;
+}
+
+#footer-SignUp-1 p {
+
+    /*border: 1px white solid;*/
+    margin-top: 5px;
+}
+
+#footer-SignUp-2 {
+
+    display: flex;
+    gap: 8px;
+    margin-top: 25px;
+    /*border: 1px white solid;*/
+    padding-left: 580px;
+}
+
+#input1  input {
+
+    width: 140px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px white solid;
+    
+}
+
+#input2 input {
+
+    height: 40px;
+    width: 80px;
+    border-radius: 40px;
+    border: 1px white solid;
+}
+
+

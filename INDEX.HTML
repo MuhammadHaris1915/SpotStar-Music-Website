@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SPOTSTAR-Login</title>
+    <!-- Mediaquery tag -->
+    <meta name="viewport" content="width=device-width,initialscale=1.0"/>
+    <link rel="stylesheet" href="style.css">
+    <!--<script src="../Script.js"></script>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<script>
+
+function validate_login_credentials()
+{
+
+    var username=document.getElementById("user_name").value;
+    var password=document.getElementById("password").value;
+
+    var flag=true;
+
+    var db=[{'username' : 'Snegga' , 'password': 'Snegga@123'}, {'username' : 'Nivedha', 'password' : 'Nivedha@345'}]
+
+    for(var i=0; i<db.length; i++){
+        console.log("Enters loop")
+        if(username==db[i].username)
+        {
+            console.log("Enters if of username")
+            if(password==db[i].password)
+            {
+                console.log("Enters if of password")
+                window.location.href="../Homepage/Homepage.html";
+
+            }
+            else
+            {
+                console.log("Enters else of password")
+                document.getElementById("error_msg").innerHTML="Invalid";
+                document.getElementById("error_msg").style.color="red";
+
+            }
+
+        }
+
+    }
+}
+
+</script>
+
+</head>
+
+<body>
+    <main>
+        <div class="login-combine">
+            <div class="class1">
+                <img src="Logo/logo-2.jpg" height="80px" width="80px">
+                <h2>Login to Spotstar</h2>
+                <div id="id1">
+                    <!--<label>User Name</label>-->
+                    <br>
+                    <input type="username" placeholder="User Name" id="user_name">
+                    <br><br>
+                    <!--<p id="error_msg"></p>-->
+                    <!--<label>Password</label>-->
+                    <br>
+                    <input type="password" placeholder="Password" id="password">
+                    <i class="fa-solid fa-user user"></i>
+                    <i class="fa-solid fa-lock lock"></i>
+                </div>
+                <div id="id2">
+                    <div>
+                        <input type="checkbox"><label>Remember Me</label>
+                    </div>
+                    <div><a href="../Forgot-Password/forget.html">Forget Password</a></div>
+                </div>
+                <br>
+                <div id="id3">
+                    <button onclick="validate_login_credentials()">Login</button>
+                </div>
+                <div id="id4">
+                    <div>
+                        <p>Are you new user? <a href="../Sign-Up/signup.html">Sign Up</a></p>
+                    </div>
+                </div>
+                <br>
+                <div id="id5">
+                    <p>Contuine with google</p>
+                    <i class="fa-brands fa-google google"></i>
+                </div> 
+                <p id="error_msg"></p>
+                
+            </div>
+        </div>
+    </main>
+</body>
+</html>
